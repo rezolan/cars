@@ -1,0 +1,92 @@
+.fig-jap>label{
+    width: 30%;
+    margin: 1%;  
+    float: left;
+    cursor: pointer;
+}
+.fig-jap{
+    margin-left: 2%;
+}
+.fig-jap>label>div>img{
+    width: 100%;    
+}
+.popup-check, .popup, .closer-check{
+    display:none;  
+}
+
+.popup-wrapper{
+    position: fixed;
+    z-index: 1;
+}
+.popupbg{
+    opacity: .7;
+    background: black;
+    width: 10000%;
+    height: 10000%;
+    position: absolute;
+    left: -500%;
+    top: -500%;
+    z-index: -499;
+}
+.popup, .popup-wrapper{
+    width: 100%;
+}
+.popup-check:checked + .popup{
+    display: block;
+}
+.inner-popup{
+    background: white;
+    width: 50%;
+    height: 450px;
+    margin-left: 6%;
+    z-index: 500;
+    overflow:scroll;
+}
+.inner-popup>img{
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+}
+.closer{
+    cursor: pointer;
+}
+.picanim{
+    z-index: 200;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.picanim>img{
+    display: block;
+}
+.picanim:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.7;   
+    border-radius: 70%;
+}
+.brend{
+    position: absolute;
+}
+@media screen and (max-width:800px){
+    .fig-jap>label{
+        width: 46%;
+    }
+    .inner-popup {
+        width: 95%;
+        margin-left: 0%;
+        overflow: scroll;
+    }
+}
+@media screen and (max-width:610px){
+    .fig-jap>label{
+    width: 90%;
+    margin: 2%;
+    }
+    .inner-popup {
+        width: 95%;
+        margin-left: 0%;
+        overflow: scroll;
+    }
+}
+
